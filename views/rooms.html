@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/rooms.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+
+    <title>Producto 2</title>
+</head>
+
+<body>
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="p-3 my-3">
+                <h2>Bienvenido: </h2>
+            </div>
+            <div class="p-3 my-3 bg-dark text-white">
+                <h2 id="NombreJugador"></h2>
+            </div>
+        </div>
+        <div class="justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-6 avatar">
+                    <div id="home" class="drop" ondrop="drop(event)"
+                        ondragover="allowDrop(event)">
+                        <img src="" id="avatarImage" class="draggable" draggable="true" ondragstart="drag(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="row rooms">
+                <div class="col-3 bg-dark text-light room" >
+
+                    <h3>North room: </h3>
+                    <div id="north" class="bg-primary text-white drop droppable" ondrop="drop(event)"
+                        ondragover="allowDrop(event)">
+                    </div>
+                </div>
+                <div class="col-3 bg-dark text-light room">
+                    <h3>East room: </h3>
+                    <div id="east" class="bg-danger text-white drop droppable" ondrop="drop(event)"
+                        ondragover="allowDrop(event)">
+                    </div>
+                </div>
+            </div>
+            <div class="row rooms">
+                <div class="col-3 bg-dark text-light room">
+                    <h3>South room: </h3>
+                    <div id="south" class="bg-light text-white drop" ondrop="drop(event)"
+                        ondragover="allowDrop(event)">
+                    </div>
+                </div>
+                <div class="col-3 bg-dark text-light room">
+                    <h3>West room: </h3>
+                    <div id="west" class="bg-success text-white drop" ondrop="drop(event)"
+                        ondragover="allowDrop(event)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button
+                        id="submit"
+                        type="submit"
+                        class="btn btn-secondary btn-block col-6"
+                        disabled = "true"
+                        onclick="submit()"
+                >
+                    Jugar
+                </button>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/rooms.js"></script>
+</footer>
+</html>

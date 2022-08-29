@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/final.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <title>Final View</title>
+</head>
+<body>
+<main>
+    <div class="container-fluid bg">
+        <div class="row justify-content-center title">
+            <h1>Juegos JSDevs</h1>
+        </div>
+        <div class="container container" id="game-wrapper">
+            <div class="row winnerDiv" id="winnerDiv">
+                <div class="alert alert-primary winnerDiv" role="alert">
+                    <span class="localStorageInfo">El ganador es:<h2 id="ganador" value=""></h2></span>
+                </div>
+                <div>
+                    <button id="playBtn" class="btn btn-secondary playBtn" onclick="{newFinal.repeatGame()}">Jugar
+                        otra vez</button>
+                    <button type="button" onclick="{newFinal.logout()}"
+                            class="btn btn-secondary playBtn">Salir</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <h2>Ranking JSDevs</h2>
+                <div class="alert alert-info" id="rankingUpload">
+                    <span>Cargando ranking...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/js/final.js"></script>
+</body>
+
+</html>

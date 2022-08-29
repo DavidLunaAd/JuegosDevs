@@ -1,0 +1,59 @@
+.container {
+    margin-top: 40px;
+}
+.drop {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 9em;
+    height: 5.5em;
+    margin: 5px;
+}
+.header {
+    background-color: grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.main {
+    margin: 10px 30px;
+}
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdd1cb;
+    border-radius: 5px;
+    margin: 0px 0px;
+    width: 40em;
+    height: 11em;
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 9em;
+    margin: 5px 25px;
+    font-size: 14px;
+    background-color: grey;
+    cursor: move;
+}
+.rooms {
+    margin-top: 10px;
+    justify-content: center;
+}
+.submit {
+    margin-top: 10px;
+    justify-content: center;
+}
+.room {
+    border-radius: 10px;
+    margin: 1px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

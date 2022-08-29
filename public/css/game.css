@@ -1,0 +1,154 @@
+.container {
+    margin-top: 40px;
+}
+
+.drop {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 9em;
+    height: 5.5em;
+    margin: 5px;
+
+}
+.header{
+
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.game-zone{
+    border: none;
+    background-color: #efefef;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}
+.gamePitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.waitingRoom{
+    margin-top: 3em;
+}
+.main{
+    margin: 10px 30px;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 5px;
+    margin: 0px 0px;
+    height: 11em;
+}
+.userPlay{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.localStorageInfo{
+    width: 6em;
+}
+.playBtn{
+    width: 6em;
+    padding: 3px;
+    margin: 3px;
+    outline: none;
+    background-color: #b9c7e5;
+    border: none;
+    color: #424242;
+}
+.playBtn:enabled:hover, .playBtn:enabled:active {
+    background-color: #9db4e4 !important;
+    color: #424242 !important;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 9em;
+    margin: 5px 25px;
+    font-size: 14px;
+    background-color: grey;
+    cursor: move;
+}
+.rooms{
+    margin-top: 10px;
+    width: 25.5em;
+    padding-left: 15px;
+}
+.invalid{
+    width: 25em;
+}
+.room{
+    border-radius: 10px;
+    margin: 1px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.gamezone{
+    padding: 5px;
+}
+.gameButton{
+    width: 8em;
+    height: 8em;
+    margin: 5px;
+    background-color: grey;
+}
+.tresContainer{
+    display: inherit;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    width: 30em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tresContainer .gameButton {
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px;
+    outline: none;
+}
+.winnerDiv{
+    width: 37em;
+    margin: auto;
+
+    font-size: 28px;
+    text-align: center;
+}
+
+.container-game {
+    justify-content: center;
+}
+
+@media (min-width: 576px){
+    .tresContainer {
+        width: 26em;
+    }
+}
+
+@media (max-width: 576px){
+    .tresContainer {
+        width: 26em;
+    }
+}
+
+canvas {
+    margin-left: -4px;
+}

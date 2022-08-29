@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+
+    <title>Juegos JSDevs</title>
+</head>
+
+<body>
+<main>
+    <div class="container-fluid bg">
+        <div class="row justify-content-center title">
+            <div class="col-12 col-sm-8 col-md-4">
+                <h1>Juegos JSDevs</h1>
+                <h2>Login</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center form">
+            <div class="col-11 col-sm-8 col-md-8 form-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-circle icon" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                <form
+                >
+                    <div class="form-group">
+                        <label for="username">Nombre</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="username"
+                                aria-describedby="userHelp"
+                                placeholder="Nombre"
+                                value=""
+                                required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input
+                                type="password"
+                                class="form-control"
+                                id="password"
+                                placeholder="Contraseña"
+                                required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <h5>Elige tu avatar:</h5>
+                        <div class="avatars-container">
+                            <label class="avatars">
+                                <button
+                                        type="button"
+                                        class="avatars"
+                                        id="avatar1"
+                                >
+                                    <img
+                                            src="https://avatars.dicebear.com/v2/avataaars/33c1819775357440a9e3667c7ca6702a.svg"
+                                            alt=""
+                                            width="100px"
+                                    />
+                                </button>
+                            </label>
+                            <label class="avatars">
+                                <button
+                                        type="button"
+                                        id="avatar2"
+                                        class="avatars"
+                                >
+                                    <img
+                                            src="https://avatars.dicebear.com/v2/avataaars/2b3bcf1124b7d5e51eb65de225fba57d.svg"
+                                            alt=""
+                                            id="avatar2"
+                                            width="100px"
+                                    />
+                                </button>
+                            </label>
+                            <label class="avatars">
+                                <button
+                                        class="avatars"
+                                        type="button"
+                                        id="avatar3"
+                                >
+                                    <img
+                                            src="https://avatars.dicebear.com/v2/avataaars/36e424f418d04f8fd2befe535aa585df.svg"
+                                            alt=""
+                                            id="avatar3"
+                                            width="100px"
+                                    />
+                                </button>
+                            </label>
+                            <label class="avatars">
+                                <button
+                                        type="button"
+                                        id="avatar4"
+                                        class="avatars"
+                                >
+                                    <img
+                                            src="https://avatars.dicebear.com/v2/avataaars/d0cde419c6423d3a6d539318665daf95.svg"
+                                            alt=""
+                                            id="avatar4"
+                                            width="100px"
+                                    />
+                                </button>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button
+                            id="submit"
+                            type="submit"
+                            class="btn btn-dark btn-block"
+                            onclick=newLogin.onSubmit()
+                    >
+                        A jugar!
+                    </button>
+                    <br />
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/login.js"></script>
+</footer>
+</html>

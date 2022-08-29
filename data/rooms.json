@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "north", "quantityUsers": 0 },
+  { "id": 2, "name": "east", "quantityUsers": 0 },
+  { "id": 3, "name": "south", "quantityUsers": 2 },
+  { "id": 4, "name": "west", "quantityUsers": 2 }
+]
